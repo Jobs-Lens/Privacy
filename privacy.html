@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy: JobLens</title>
+<meta name="description" content="JobLens Privacy Policy: what stays on your device, what's involved in the Pro purchase, and the security protections in place.">
+<link rel="icon" href="jl-logo.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #0f0d17;
+    --panel: #171425;
+    --line: #2a2438;
+    --text: #f1edf9;
+    --muted: #9b93b0;
+    --accent: #8b5cf6;
+    --accent-2: #6d28d9;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+  .topbar { border-bottom: 1px solid var(--line); padding: 16px 24px; display: flex; align-items: center; gap: 10px; }
+  .topbar a.home { display: flex; align-items: center; gap: 9px; color: var(--text); text-decoration: none; font-weight: 800; font-size: 14px; }
+  .mark-sm { width: 26px; height: 26px; border-radius: 8px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .mark-sm svg { width: 14px; height: 14px; }
+  .mark-sm .jl { color: #fff; font-weight: 800; font-size: 12px; letter-spacing: -0.5px; font-family: Arial, Helvetica, sans-serif; }
+
+  .layout { max-width: 980px; margin: 0 auto; display: grid; grid-template-columns: 200px minmax(0,1fr); gap: 48px; padding: 40px 24px 80px; }
+  nav.rail { position: sticky; top: 24px; align-self: start; font-size: 13px; }
+  nav.rail .eyebrow { color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; font-weight: 700; margin-bottom: 12px; }
+  nav.rail a { display: block; color: var(--muted); text-decoration: none; padding: 7px 0; border-left: 2px solid transparent; padding-left: 12px; margin-left: -1px; }
+  nav.rail a:hover { color: var(--text); }
+
+  article h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.4px; margin: 0 0 6px; }
+  article .updated { color: var(--muted); font-size: 13px; margin: 0 0 36px; }
+  article .lede { font-size: 16px; color: var(--text); line-height: 1.65; margin: 0 0 40px; padding: 16px 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+  section { margin-bottom: 38px; }
+  section h2 { font-size: 19px; font-weight: 800; margin: 0 0 14px; scroll-margin-top: 24px; }
+  section p, section li { font-size: 14.5px; line-height: 1.7; color: var(--text); }
+  section ul { padding-left: 20px; margin: 10px 0; }
+  section li { margin-bottom: 6px; }
+  code { background: var(--panel); border: 1px solid var(--line); border-radius: 5px; padding: 1px 6px; font-size: 13px; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+  a { color: var(--accent); }
+  a:focus-visible, nav.rail a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+  .pill-table { display: grid; gap: 8px; margin: 14px 0; }
+  .pill { display: flex; gap: 10px; align-items: flex-start; background: var(--panel); border: 1px solid var(--line); border-radius: 9px; padding: 10px 12px; font-size: 13.5px; }
+  .pill b { flex-shrink: 0; min-width: 86px; color: var(--accent); }
+  footer { border-top: 1px solid var(--line); padding: 24px; text-align: center; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--muted); }
+
+  @media (max-width: 720px) {
+    .layout { grid-template-columns: 1fr; }
+    nav.rail { position: static; display: flex; flex-wrap: wrap; gap: 4px 14px; padding-bottom: 18px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+    nav.rail a { padding: 4px 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <a class="home" href="index.html">
+      <span class="mark-sm" aria-hidden="true"><span class="jl">JL</span></span>
+      JobLens
+    </a>
+  </div>
+
+  <div class="layout">
+    <nav class="rail" aria-label="Sections">
+      <div class="eyebrow">On this page</div>
+      <a href="#local">What stays local</a>
+      <a href="#pro">Pro upgrade &amp; payments</a>
+      <a href="#security">Security protections</a>
+      <a href="#disclosure">Data disclosure</a>
+      <a href="#contact">Contact &amp; refunds</a>
+    </nav>
+
+    <article>
+      <h1>Privacy Policy</h1>
+      <p class="updated">JobLens. Last updated 2026.</p>
+
+      <p class="lede">JobLens does not require an account to use it. Your saved job data is never sent to us. It stays in your own browser.</p>
+
+      <section id="local">
+        <h2>What stays local</h2>
+        <ul>
+          <li>Saved jobs are stored in <code>chrome.storage.local</code> in your browser profile.</li>
+          <li>CSV and spreadsheet (.xlsx) exports are generated locally and saved as files on your device.</li>
+          <li>Job saving makes <strong>no remote network requests</strong>. Saved job records are never transmitted off your device.</li>
+        </ul>
+      </section>
+
+      <section id="pro">
+        <h2>Pro upgrade and payments</h2>
+        <p>Buying JobLens Pro is the only feature that involves a third party:</p>
+        <ul>
+          <li>When you choose to upgrade, the <strong>Upgrade</strong> page opens a secure <strong>Stripe</strong> checkout page for a one-time payment. Your payment details are entered on Stripe and handled by Stripe. JobLens never sees or stores card information. See <a href="https://stripe.com/privacy" rel="noopener">Stripe's privacy policy</a>.</li>
+          <li>After payment you receive a <strong>license key</strong>. When you activate it, the extension contacts the JobLens license server (a Cloudflare Worker) to confirm the purchase. The only data sent in this request is the license key, and optionally the email you choose to enter.</li>
+          <li>To keep Pro accurate (for example, if a payment is refunded), the extension re-checks the license periodically, on startup and roughly every 12 hours. This sends only the license key. If the device is offline, the last verified status is kept.</li>
+          <li><strong>Your saved jobs are never included</strong> in any payment or license request.</li>
+        </ul>
+        <p>The license server stores only what is needed to validate a purchase: the license key, the customer email and Stripe identifiers, and the license status. It does not receive or store any job data.</p>
+      </section>
+
+      <section id="security">
+        <h2>Security protections</h2>
+        <ul>
+          <li>Page text is sanitized before storage.</li>
+          <li>Unsafe <code>javascript:</code> apply links are rejected.</li>
+          <li>CSV formula injection is escaped before export.</li>
+          <li>Malformed JSON-LD does not block fallback extraction.</li>
+          <li>No remote scripts or <code>eval</code> are used.</li>
+          <li>License checks use HTTPS; the server returns a signed token so cached status is tamper-evident.</li>
+        </ul>
+      </section>
+
+      <section id="disclosure">
+        <h2>Chrome Web Store data disclosure</h2>
+        <p>In Chrome's data-disclosure categories, JobLens collects:</p>
+        <div class="pill-table">
+          <div class="pill"><b>Website content</b> the text of the job posting on the page you save, to populate the saved record.</div>
+          <div class="pill"><b>PII (optional)</b> an email address, only if you choose to enter one when activating Pro.</div>
+          <div class="pill"><b>Payment info</b> handled entirely by Stripe during checkout. JobLens does not collect or store it.</div>
+        </div>
+        <p>JobLens does not collect health information, authentication credentials, personal communications, location, web history, or user activity (clicks, scrolling, or keystrokes). It does not sell user data, use it for purposes unrelated to the Pro purchase, or use it to determine creditworthiness or for lending.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact &amp; refunds</h2>
+        <p>Questions about this policy or your purchase: <a href="mailto:support@joblens.app">support@joblens.app</a>.</p>
+        <p>Refund requests for the one-time Pro purchase can be sent to the same address, or via the receipt link Stripe emails after checkout.</p>
+      </section>
+    </article>
+  </div>
+
+  <footer>
+    <a href="index.html">JobLens</a> / <a href="mailto:support@joblens.app">support@joblens.app</a>
+  </footer>
+</body>
+</html>
